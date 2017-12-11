@@ -1,0 +1,10 @@
+id_width = 16
+spatial_hash_key = 'coord'
+
+[components]
+coord = { type = '::cgmath::Vector2<i32>', storage = 'vector' }
+solid = { storage='vector' }
+tile = { type = 'char', storage = 'vector' }
+
+[spatial_hash]
+solid_count = { component = 'solid' }
